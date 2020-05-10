@@ -5,46 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Greedy OR Witty</title>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="app.js"></script>
   </head>
   <body>
-    <div class="title">
-      greedy or witty
-    </div>
     <div class="wrapper">
-      <div iv class="container">
+      <div class="container">
         <div class="score content">
           <div id="name">
-            Player 1
+            Player 1 <span id="active0">*</span>
           </div>
-          <div id="score">
+          <div id="score" id="s1">
             10
           </div>
           <div id="temp">
             <h3>Temporary</h3>
-            <p>2</p>
+            <p id="t1">2</p>
           </div>
         </div>
 
         <div class="menu content">
-          <div class="btn">
-            New Game
+          <input type="button" value="New Game" id="ng" class="btn" onclick="newGame()"></input>
+          <div class="dice">
+            <lottie-player
+             src="./anime/dice5.json" 
+             background="transparent"  
+             speed="1"  
+             style="width: 70%; height: 70%;"  
+             autoplay
+            ></lottie-player>
           </div>
-          <div>Animation</div>
-          <div class="btn">
-            Hold
-          </div>
+          <input type="button" value="Hold" id="hd" class="btn" onclick="hold()"></>
         </div>
 
         <div class="score content">
           <div id="name">
-            Player 2
+            Player 2 <span id="active1">*</span>
           </div>
-          <div id="score">
+          <div id="score" id="s2">
             20
           </div>
           <div id="temp">
             <h3>Temporary</h3>
-            <p>4</p>
+            <p id="t2">4</p>
           </div>
         </div>
       </div>
