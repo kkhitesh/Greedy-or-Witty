@@ -13,3 +13,5 @@ But, here's the catch you lose all of your temporary points if you encounter fac
 The first player to reach 50 points wins.
 
 Enjoy and share with your friends. 😊😊😊
+
+You can play the game [here](https://hiteshk-ai.github.io/Greedy-or-Witty/)
