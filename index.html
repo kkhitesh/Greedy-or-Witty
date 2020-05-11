@@ -4,53 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Greedy OR Witty</title>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script src="app.js"></script>
+    <title>Greedy OR Witty</title>  
   </head>
   <body>
     <div class="wrapper">
       <div class="container">
         <div class="score content">
           <div id="name">
-            Player 1 <span id="active0">*</span>
+            Player 1 <span id="active-0">*</span>
           </div>
-          <div id="score" id="s1">
+          <div id="score0">
             10
           </div>
           <div id="temp">
             <h3>Temporary</h3>
-            <p id="t1">2</p>
+            <div id="t0">2</div>
           </div>
         </div>
 
         <div class="menu content">
-          <input type="button" value="New Game" id="ng" class="btn" onclick="newGame()"></input>
+          <input type="button" value="New Game" id="ng" class="btn"></input>
           <div class="dice">
-            <lottie-player
-             src="./anime/dice5.json" 
-             background="transparent"  
-             speed="1"  
-             style="width: 70%; height: 70%;"  
-             autoplay
-            ></lottie-player>
+            <img src="dice.gif" id="gif">
+            <img src="" id="pic">
+            <button class="btn" id="roll">Roll</button>
           </div>
-          <input type="button" value="Hold" id="hd" class="btn" onclick="hold()"></>
+          <input type="button" value="Hold" id="hd" class="btn"></img>
         </div>
 
         <div class="score content">
           <div id="name">
-            Player 2 <span id="active1">*</span>
+            Player 2 <span id="active-1">*</span>
           </div>
-          <div id="score" id="s2">
+          <div id="score1">
             20
           </div>
           <div id="temp">
             <h3>Temporary</h3>
-            <p id="t2">4</p>
+            <div id="t1">4</div>
           </div>
         </div>
       </div>
     </div>
   </body>
+  <script src="app.js"></script>
 </html>
