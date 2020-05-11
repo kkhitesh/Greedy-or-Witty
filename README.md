@@ -1,6 +1,6 @@
-GREEDY OR WITTY
+#**GREEDY OR WITTY**
 
-Greedy or Witty is a game of dices made for two players.
+Greedy or Witty is a *game of dices* made for two players.
 
 Simply, start the game by clicking on roll-dice.
 
